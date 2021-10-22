@@ -1,2 +1,2 @@
-# design-patterns-udemy
-Set of Java sandbox classes from the "Design Patterns in Java" Udemy course
+# Design Patterns Udemy
+Set of Java sandbox classes from the Udemy course [Design Patterns in Java](https://www.udemy.com/course/design-patterns-java/)
