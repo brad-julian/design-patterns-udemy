@@ -23,11 +23,13 @@ public class Point {
     }
   }
 
-  public static Point newCartesianPoint(double x, double y) {
-    return new Point(x, y);
-  }
+  public static class Factory {
+    public static Point newCartesianPoint(double x, double y) {
+      return new Point(x, y);
+    }
 
-  public static Point newPolarPoint(double rho, double theta) {
-    return new Point(rho * cos(theta), rho * sin(theta));
+    public static Point newPolarPoint(double rho, double theta) {
+      return new Point(rho * cos(theta), rho * sin(theta));
+    }
   }
 }
