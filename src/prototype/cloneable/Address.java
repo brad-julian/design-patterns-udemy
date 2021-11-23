@@ -1,4 +1,4 @@
-package prototype;
+package prototype.cloneable;
 
 public class Address implements Cloneable {
 
