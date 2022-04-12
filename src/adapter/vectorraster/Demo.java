@@ -11,6 +11,8 @@ public class Demo {
 
   public static void main(String[] args) {
     draw();
+    draw(true);
+    draw(true);
   }
 
   public static void drawPoint(Point p) {
@@ -18,10 +20,19 @@ public class Demo {
   }
 
   private static void draw() {
+    draw(false);
+  }
+
+  private static void draw(boolean useCache) {
     for (VectorObject vo : vectorObjects) {
       for (Line line : vo) {
-        LineToPointAdapter adapter = new LineToPointAdapter(line);
-        adapter.forEach(Demo::drawPoint);
+        if (useCache) {
+          CachedLineToPointAdapter adapter = new CachedLineToPointAdapter(line);
+          adapter.forEach(Demo::drawPoint);
+        } else {
+          LineToPointAdapter adapter = new LineToPointAdapter(line);
+          adapter.forEach(Demo::drawPoint);
+        }
       }
     }
   }
