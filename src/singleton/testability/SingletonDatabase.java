@@ -12,7 +12,7 @@ import java.util.List;
 
 import static java.lang.Integer.parseInt;
 
-public class SingletonDatabase {
+public class SingletonDatabase implements PopulationDatabase {
   private static int instanceCount = 0;
   private static final SingletonDatabase INSTANCE = new SingletonDatabase();
 
