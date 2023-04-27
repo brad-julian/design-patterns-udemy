@@ -1,9 +1,6 @@
-package composite;
-
-import org.apache.commons.lang3.StringUtils;
+package composite.shapes;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static java.lang.String.join;

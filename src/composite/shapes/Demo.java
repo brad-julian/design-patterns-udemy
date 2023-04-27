@@ -1,4 +1,4 @@
-package composite;
+package composite.shapes;
 
 public class Demo {
 
